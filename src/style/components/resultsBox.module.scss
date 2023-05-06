@@ -1,0 +1,32 @@
+@use '../variables';
+@import '../mixins';
+
+.resultsBox {
+  padding: 1.125rem 1.5rem .6875rem 1.5rem;
+  margin-bottom: 1.5625rem;
+  background-color: variables.$color-green;
+  border-radius: 10px;
+  @include breakpoint(medium) {
+    margin-bottom: 2rem;
+    max-width: 20.3125rem;
+  }
+}
+
+.label {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  color: variables.$color-inverse;
+  font-size: .875rem;
+  line-height: 1.375em;
+  font-weight: 700;
+  @include breakpoint(medium) {
+    font-size: 1rem;
+  }
+  & + * {
+    margin-top: .375rem;
+  }
+}
+
+.labelIsHeavy {
+  font-weight: 800;
+}

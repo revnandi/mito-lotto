@@ -1,0 +1,8 @@
+@use '../variables';
+
+.header {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 1.25rem;
+  background: variables.$color-green-yellow-gradient;
+}

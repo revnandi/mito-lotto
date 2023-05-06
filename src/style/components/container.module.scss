@@ -1,0 +1,15 @@
+@use '../variables';
+@import '../mixins';
+
+.container {
+  width: 100%;
+  max-width: 49.5rem;
+  padding: 1rem;
+  border-radius: .125rem;
+  box-shadow: 2px 2px 10px 0px rgba(255, 255, 255, 0.1);
+  background-color: variables.$color-inverse;
+  @include breakpoint(medium) {
+    padding: 3rem 4.875rem;
+    border-radius: 1.5rem;
+  }
+}

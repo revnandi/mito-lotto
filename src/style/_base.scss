@@ -1,0 +1,100 @@
+@use './variables';
+
+
+html {
+  height: 100%;
+}
+
+html, body {
+  background-color: variables.$color-gray;
+  height: 100%;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+#app {
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: variables.$color-dark-blue;
+}
+
+#speed-slider {
+  // appearance: none;
+  // -webkit-appearance: none;
+  // width: 100%;
+  // border-radius: 10px;
+  // vertical-align: bottom;
+  // height: .625rem;
+  // cursor: pointer;
+  
+  // overflow: hidden;
+  width: 100%;
+  // padding: initial;
+  // margin: 0;
+  // border: initial;
+  // color: variables.$color-green;
+  // transition: all ease-in 0.25s;
+
+  // Webkit
+  &::-webkit-slider-container {
+    // background-color: variables.$color-yellow-medium; 
+  }
+  &::-webkit-slider-thumb {
+    // appearance: auto;
+    // box-sizing: border-box;
+    // display: block;
+    // -webkit-user-modify: read-only !important;
+
+    // width: .625rem;
+    // height: .625rem;
+    // background: variables.$color-inverse;
+    // border: 1px solid variables.$color-green;
+    // box-shadow: -3px 0px 0 0 variables.$color-green;
+    // cursor: pointer;
+  }
+  &::-webkit-slider-runnable-track {
+  
+    // -webkit-appearance: none;
+    // position: relative;
+    // height: .625rem;
+  }
+  // Mozilla
+  &::-moz-range-progress {
+    background-color: variables.$color-green;
+    height: .75rem;
+    border-radius: 10px;
+  }
+  &::-moz-range-track {
+    background-color: variables.$color-yellow-medium;
+  }
+  &::-moz-range-thumb {
+    appearance: auto;
+    box-sizing: border-box;
+    display: block;
+    -webkit-user-modify: read-only !important;
+
+    width: .625rem;
+    height: .625rem;
+    background: variables.$color-inverse;
+    border: 1px solid variables.$color-green;
+    box-shadow: -3px 0px 0 0 variables.$color-green;
+    cursor: pointer;
+  }
+  // MS
+  &::-ms-fill-lower {
+    background-color: variables.$color-green;
+  }
+  &::-ms-fill-upper {
+    background-color: variables.$color-yellow-medium;
+  }
+}
+
+#rangeslider {
+  & .panel-fill {
+    height: 10px;
+    top: -50%;
+    transform: translateY(-25%)!important;
+  }
+}

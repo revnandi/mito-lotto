@@ -1,0 +1,24 @@
+@use '../variables';
+@import '../mixins';
+
+.component {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.375rem;
+  min-height: 1.5625rem;
+  border: 1px solid variables.$color-green;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+  font-size: .75rem;
+  @include breakpoint(medium) {
+    min-width: 2.125rem;
+    min-height: 2.375rem;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  & + * {
+    margin-left: 1rem;
+  }
+}
