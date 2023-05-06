@@ -10,7 +10,7 @@
   min-height: 1.5625rem;
   border: 1px solid variables.$color-green;
   border-radius: 5px;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: variables.$shadow;
   font-size: .75rem;
   @include breakpoint(medium) {
     min-width: 2.125rem;
